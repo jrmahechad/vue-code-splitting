@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Hero />
+    <Card v-for="(item, index) in cards" :key="index" :card="item"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Hero from '@/components/Hero.vue';
+import Card from '@/components/Card.vue';
 
 export default {
+  data() {
+    return {
+      cards: [
+        { heading: 'Awesome card 1', copy: 'Copy 1', imgSrc: 'https://loremflickr.com/g/640/480/food?lock=15' },
+        { heading: 'Awesome card 2', copy: 'Copy 2', imgSrc: 'https://loremflickr.com/g/640/480/food?lock=68' },
+        { heading: 'Awesome card 3', copy: 'Copy 3', imgSrc: 'https://loremflickr.com/g/640/480/food?lock=35' },
+      ],
+    };
+  },
   name: 'home',
   components: {
-    HelloWorld,
+    Hero,
+    Card,
   },
 };
 </script>
