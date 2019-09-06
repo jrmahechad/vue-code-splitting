@@ -19,10 +19,10 @@ export default {
 
 <style lang="scss" scoped>
   .md-card {
-    width: 320px;
-    margin: 4px;
     display: inline-block;
+    margin: 4px;
     vertical-align: top;
+    width: 320px;
   }
 
   h1{
