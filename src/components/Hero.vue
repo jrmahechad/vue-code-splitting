@@ -4,7 +4,7 @@
       <h1 class="h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
     </div>
     <div class="md-layout-item">
-      <img src="http://lorempixel.com/1280/960/nature/2" />
+      <img src="@/assets/hero.jpeg" />
     </div>
   </div>
 </template>

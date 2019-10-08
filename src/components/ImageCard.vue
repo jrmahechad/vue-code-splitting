@@ -1,7 +1,7 @@
 <template>
    <md-card>
       <md-card-media>
-        <img :src="card.imgSrc" alt="People">
+        <img :src="getImgUrl(card.imgSrc)" alt="People">
       </md-card-media>
 
       <md-card-header>
@@ -14,6 +14,11 @@
 <script>
 export default {
   props: ['card'],
+  methods: {
+    getImgUrl(pic) {
+      return require(`@/assets/${pic}.jpeg`);
+    },
+  },
 };
 </script>
 

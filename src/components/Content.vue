@@ -14,7 +14,7 @@
       <md-button class="md-raised md-primary">Explore</md-button>
     </div>
     <div class="md-layout-item">
-      <img src="http://lorempixel.com/1280/960/nature/8" />
+      <img src="@/assets/tree.jpeg" />
     </div>
   </div>
 </section>
